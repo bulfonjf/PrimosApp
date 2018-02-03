@@ -4,5 +4,5 @@ export default {
   databaseURL: 'https://primosapp-193406.firebaseio.com',
   projectId: 'primosapp-193406',
   storageBucket: 'primosapp-193406.appspot.com',
-  messagingSenderId: '476628400718' 
+  messagingSenderId: '476628400718',
 };
