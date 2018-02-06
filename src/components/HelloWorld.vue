@@ -7,22 +7,21 @@
 </template>
 
 <script>
-import firebase from '../firebase/firebaseInit'
+import firebase from '../firebase/firebaseInit';
+
 export default {
   name: 'HelloWorld',
   data() {
     return {
-      dbdata: []
-    }
+      dbdata: [],
+    };
   },
-  created () {
+  created() {
     const db = firebase.database();
     const self = this;
-    db.ref('servicios').on('value', function(response){
-      self.dbdata = response;
-    });
-  }
-}
+    db.ref('servicios').on('value', (response) => { self.dbdata = response; });
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
