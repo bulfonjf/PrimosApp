@@ -58,7 +58,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  buildDir: '@/functions',
+  buildDir: '/functions',
   build: {
     /*
     ** You can extend webpack config here
