@@ -1,0 +1,8 @@
+npm-debug.log
+/.nuxt/
+/node_modules/
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/

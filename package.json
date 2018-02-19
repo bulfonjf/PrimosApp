@@ -1,30 +1,22 @@
 {
-  "name": "nuxtpwavuetify",
-  "version": "1.0.0",
-  "description": "Prueba",
-  "author": "bulfonjf",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
-    "@nuxtjs/pwa": "^2.0.5",
-    "nuxt": "^1.0.0",
-    "vuetify": "^0.17.3"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.0.1",
-    "eslint": "^4.15.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "name": "primosapp",
+    "version": "1.0.0",
+    "description": "Prueba",
+    "author": "bulfonjf",
+    "private": true,
+    "scripts": {
+      "dev": "cd \"src\" && yarn dev",
+      "build": "yarn build:nuxt && yarn clean && yarn copyassets",
+      "serve": "firebase serve --only functions,hosting",
+      "deploy": "firebase deploy",
+      "copyassets": "yarn copydist && yarn copystatic",
+      "copydist": "xcopy .\\functions\\nuxt\\dist .\\public\\assets /E",
+      "copystatic": "xcopy .\\src\\static .\\public /E",
+      "clean": "rimraf public/assets/*",
+      "build:nuxt": "cd \"src\" && yarn build"
+    },
+    "devDependencies": {
+      "cross-env": "^5.0.5",
+      "rimraf": "^2.6.2"
+    }
   }
-}

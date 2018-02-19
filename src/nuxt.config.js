@@ -58,11 +58,12 @@ module.exports = {
   /*
   ** Build configuration
   */
-  buildDir: '/functions',
+  buildDir: '../functions/nuxt',
   build: {
     /*
     ** You can extend webpack config here
-    */  
+    */
+    publicPath: '/assets/',
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

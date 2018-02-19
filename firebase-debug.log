@@ -1,0 +1,43 @@
+[debug] [2018-02-19T00:57:22.903Z] ----------------------------------------------------------------------
+[debug] [2018-02-19T00:57:22.906Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\juan.bulfon\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2018-02-19T00:57:22.906Z] CLI Version:   3.17.4
+[debug] [2018-02-19T00:57:22.906Z] Platform:      win32
+[debug] [2018-02-19T00:57:22.906Z] Node Version:  v8.9.4
+[debug] [2018-02-19T00:57:22.908Z] Time:          Sun Feb 18 2018 21:57:22 GMT-0300 (SA Eastern Standard Time)
+[debug] [2018-02-19T00:57:22.908Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-19T00:57:22.928Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-19T00:57:22.928Z] > authorizing via signed-in user
+[debug] [2018-02-19T00:57:22.930Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-19T00:57:22.930Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/SWLCoBorLF42xcPENSDAHyhQVHBTVrO0_TMBHQ88PCIJfDJ3XLhYy2l7zPZSisJu',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Feb 18 2018 21:57:22 GMT-0300 (SA Eastern Standard Time)
+[debug] [2018-02-19T00:57:23.273Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-19T00:57:23.296Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/primosapp-193406  
+  
+ Sun Feb 18 2018 21:57:23 GMT-0300 (SA Eastern Standard Time)
+[debug] [2018-02-19T00:57:24.499Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-19T00:57:24.500Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/primosapp-193406/tokens  
+  
+ Sun Feb 18 2018 21:57:24 GMT-0300 (SA Eastern Standard Time)
+[debug] [2018-02-19T00:57:25.254Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\juan.bulfon\Documents\Personal\Proyectos\Nuxt\NuxtPWAVuetify'...
+[info] 
+[warn] !  functions: Cannot start emulator. Error: Access is denied.
+\\?\C:\Users\juan.bulfon\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\src\node\extension_binary\grpc_node.node
+[debug] [2018-02-19T00:57:26.888Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/primosapp-193406  
+  
+ Sun Feb 18 2018 21:57:26 GMT-0300 (SA Eastern Standard Time)
+[debug] [2018-02-19T00:57:28.029Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-19T00:57:28.030Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/476628400718/clients/_:getWebAppConfig  
+  
+ Sun Feb 18 2018 21:57:28 GMT-0300 (SA Eastern Standard Time)
+[debug] [2018-02-19T00:57:28.610Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
